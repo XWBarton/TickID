@@ -10,6 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Lato&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
 
+<link href="class-style.css" rel="stylesheet">
+
 <!-- COLOUR PALETTE
 
 #14243e - Dark Blue
@@ -22,74 +24,6 @@
 
 -->
 
-<style>
-
-h1 {font-family: 'Chicle', cursive; font-size: 300%;}
-
-h2 {font-family: 'Open Sans', sans-serif;}
-
-ol {font-family: 'Open Sans', sans-serif;}
-
-.footer {
-
-	font-family:  'Open Sans', sans-serif;
-	text-align: center;
-	color: #2c4f87
-	}
-
-a.top:link {color:#000000;text-decoration:none;}
-a.top:visited {color:#000000;text-decoration:none;}
-a.top:hover {color:#000000;text-decoration:none;}
-
-.column {
-  float: left;
-  width: 47%;
-  padding: 15px;
-  color: white;
-	}
-
-.button {
-  display: inline-block;
-  border-radius: 25px;
-  background-color: #0b7279;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-</style>
-
 </head>
 
 <a class="top" href="https://xavierbarton.com/TickID/index.html">
@@ -98,7 +32,25 @@ a.top:hover {color:#000000;text-decoration:none;}
 
 <h2 style="text-align:center; background-color:#f9931e; border-radius: 25px; padding: 15px; margin: 0px; font-family: 'Open Sans', sans-serif; font-size: 110%">Family</h2>
 
+<div class="contentsbutton">
+
+</div>
+
+<a class="float">
+<span style="font-size:30px;cursor:pointer;background: #085b78; padding: 20px; border-radius: 25px" onclick="openNav()">&#10097</span>
+</a>
+
 <body style="background-color:#14243e;">
+
+<!-- Contents -->
+
+<div id="mySidenav" class="contents">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://xavierbarton.com/TickID/lists/familylist.html">Family</a>
+  <a href="https://xavierbarton.com/TickID/lists/instar.html">Instar</a>
+  <a href="https://xavierbarton.com/TickID/lists/genuslist.html">Genus</a>
+  <a href="https://xavierbarton.com/TickID/lists/specieslist.html">Species</a>
+</div>
 
 <!-- Classifiying -->
 
@@ -135,9 +87,23 @@ a.top:hover {color:#000000;text-decoration:none;}
   </div>
 </div>
 
-<footer>
+<div class="footer">
   <p>Xavier Barton - Cryptick Lab - Murdoch University</p>
-</footer>
+</div>
+
+<!-- Contents -->
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 
 </body>
 </html>
