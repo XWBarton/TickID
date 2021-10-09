@@ -1,0 +1,93 @@
+h1 {font-family: 'Chicle', cursive; font-size: 300%;}
+
+h2 {font-family: 'Open Sans', sans-serif;}
+
+h3 {font-family: 'Open Sans', sans-serif; color:white;}
+
+p {font-family: 'Open Sans', sans-serif; color:white;}
+
+ol {font-family: 'Open Sans', sans-serif; color:white;}
+
+footer {
+
+	font-family:  'Open Sans', sans-serif;
+	text-align: center;
+	color: #2c4f87;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	margin-top: 5%;
+	}
+
+a.top:link {color:#000000;text-decoration:none;}
+a.top:visited {color:#000000;text-decoration:none;}
+a.top:hover {color:#000000;text-decoration:none;}
+
+.column {
+  float: left;
+  width: 47%;
+  padding: 15px;
+  color: white;
+	}
+
+.button {
+  display: inline-block;
+  border-radius: 25px;
+  background-color: #0b7279;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.ixo {
+
+	margin:auto;
+}
+
+.arg {
+
+	margin:auto;
+}
+
+.frog {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.frog > * {
+	flex: 1 1 300px;
+	margin: 20px;
+}
+
