@@ -78,23 +78,28 @@ a.top:hover {color:#000000;text-decoration:none;}
 }
 
 img {
-	height: 300px;
-	text-align; center;
-	border-radius: 25px;
+	width: 300px;
+	border-radius: 25px;	
+	margin: 20px;
+}
+
+.butrow{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+	justify-content: center;
+    }
 	
+.piccis {
+	display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+	justify-content: center;
 }
 
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  padding: 5px;
+ol, ul {
+	
+font-family: 'Open Sans', sans-serif; color:white;
+
 }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-ol, ul {font-family: 'Open Sans', sans-serif; color:white;}

@@ -79,9 +79,21 @@ a.top:hover {color:#000000;text-decoration:none;}
 }
 
 img {
-	width: 30%;
-	text-align; center;
+	width: 300px;
+	border-radius: 25px;	
 	margin: 20px;
-	border-radius: 25px;
-	
 }
+
+.flexy {
+	display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+	justify-content: center;
+}
+
+.butrow{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+	justify-content: center;
+    }
