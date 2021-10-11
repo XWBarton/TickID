@@ -1,0 +1,87 @@
+h1 {font-family: 'Chicle', cursive; font-size: 300%;}
+
+h2 {font-family: 'Open Sans', sans-serif;}
+
+h3 {font-family: 'Open Sans', sans-serif; color: white; padding-left: 5%}
+
+table {font-family: 'Open Sans', sans-serif; color: white; width:"100%"}
+
+th, td {
+  background-color:#0b7279;
+  border-radius: 10px;
+  width:"100%"
+  text-align: center;
+}
+
+td {text-align: center;}
+
+p {font-family: 'Open Sans', sans-serif; color: white; padding-left: 5%}
+
+.footer {
+
+	font-family:  'Open Sans', sans-serif;
+	text-align: center;
+	color: #2c4f87
+	}
+
+a.top:link {color:#000000;text-decoration:none;}
+a.top:visited {color:#000000;text-decoration:none;}
+a.top:hover {color:#000000;text-decoration:none;}
+
+.column {
+  float: left;
+  width: 47%;
+  padding: 15px;
+  color: white;
+	}
+
+.button {
+ 
+  border-radius: 25px;
+  background-color: #e5562b;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+   margin:0 auto;
+  display:block;
+
+  }
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+img {
+	width: 30%;
+	text-align; center;
+	margin: 20px;
+	border-radius: 25px;
+	
+}
