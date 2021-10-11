@@ -2,7 +2,7 @@ h1 {font-family: 'Chicle', cursive; font-size: 300%;}
 
 h2 {font-family: 'Open Sans', sans-serif;}
 
-h3 {font-family: 'Open Sans', sans-serif; color: white; padding-left: 5%}
+h3 {font-family: 'Open Sans', sans-serif; color: white;}
 
 table {font-family: 'Open Sans', sans-serif; color: white; width:"100%"}
 
@@ -15,7 +15,7 @@ th, td {
 
 td {text-align: center;}
 
-p {font-family: 'Open Sans', sans-serif; color: white; padding-left: 5%}
+p {font-family: 'Open Sans', sans-serif; color: white;}
 
 .footer {
 
@@ -48,7 +48,6 @@ a.top:hover {color:#000000;text-decoration:none;}
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-   margin:0 auto;
   display:block;
 
   }
@@ -79,9 +78,23 @@ a.top:hover {color:#000000;text-decoration:none;}
 }
 
 img {
-	width: 30%;
+	height: 300px;
 	text-align; center;
-	margin: 20px;
 	border-radius: 25px;
 	
 }
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ol, ul {font-family: 'Open Sans', sans-serif; color:white;}
